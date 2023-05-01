@@ -27,3 +27,6 @@ command: streamlit run main.py
 7. pandas.get_dummies For Handling Categorical Data.
 8. pandas.read_csv or pandas.read_excel To Read Dataset.
 9. pandas.merger For Merge Datasets.
+
+# Code Written by:
+Dhrumil Patel
