@@ -22,7 +22,7 @@ import pandas as pd
 class DatasetReading:
     def get_file(self):
 
-        sl.write("<h1 style='text-align:Center'>Automated Data Pre-Processing</h1>",unsafe_allow_html=True)
+        sl.write("<h1 style='text-align:Center'>Automated Data Processing</h1>",unsafe_allow_html=True)
         self.file = sl.text_input(label="Give File Path:")
         self.file_name = sl.text_input(label='Save File With Name As:')
         if '.csv' in self.file:
