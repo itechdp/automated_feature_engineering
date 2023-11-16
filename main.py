@@ -67,7 +67,7 @@ class DataHandeling(DatasetReading):
         sl.dataframe(self.dataset.head())
     
     def missing_val_imputer(self):
-        sl.subheader("Handeling Missing Values")
+        sl.subheader("Handling Missing Values")
         updated_dataset = self.dataset
         from sklearn.impute import SimpleImputer
         imputer = SimpleImputer(strategy='mean')
@@ -112,6 +112,6 @@ user = DataHandeling()
 dataset = user.get_file()
 user.get_df_info()
 user.DataEncoding()
-user.missing_val_imputer()
+# user.missing_val_imputer()
 user.data_normalization()
 user.save_file()
