@@ -24,8 +24,7 @@ class DatasetReading:
 
         sl.write("<h1 style='text-align:Center'>Automated Data Pre-Processing</h1>",unsafe_allow_html=True)
         self.file = sl.file_uploader("Upload a file", type=["csv", "xlsx", "xls"])
-        self.file_name = sl.text_input(label='Save File With Name As:')
-
+   
         if self.file is not None:
             if self.file.name.endswith('.csv'):
                 self.dataset = pd.read_csv(self.file)
@@ -67,7 +66,7 @@ class DataHandeling(DatasetReading):
         sl.dataframe(self.dataset.head())
     
     def missing_val_imputer(self):
-        sl.subheader("Handling Missing Values")
+        sl.subheader("Handeling Missing Values")
         updated_dataset = self.dataset
         from sklearn.impute import SimpleImputer
         imputer = SimpleImputer(strategy='mean')
@@ -104,14 +103,11 @@ class DataHandeling(DatasetReading):
         elif '.xlsx' in self.file:
             sl.download_button(label='Download Processed File',data=self.dataset.to_excel(index=True),file_name=f"{self.file.name.replace('.xlsx','')} Processed File.xlsx",key='download_csv')
             return self.dataset
-        
-
-
 
 user = DataHandeling()
 dataset = user.get_file()
 user.get_df_info()
 user.DataEncoding()
-# user.missing_val_imputer()
+user.missing_val_imputer()
 user.data_normalization()
 user.save_file()
