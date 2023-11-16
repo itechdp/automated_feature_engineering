@@ -1,36 +1,19 @@
 '''
-WorkFlow: 
+Workflow: 
 
-1. Data Cleaning --> Handeling missing values, dealing with outliers and correcting data entry errors.
+1. Data Cleaning --> Handling missing values, dealing with outliers, and correcting data entry errors.
 
-2. Data Integration --> Merging of multiple dataset in one single dataset
-
-3. Data Transformation --> normalization and standardization log or power transformation
-
-4. Feature selection --> Reduce the dimensionality and improve model performance. Correlation analysis, statiscal tests or feature importance analysis
-
-5. Handeling imbalanced data --> Resampleing , oversampling or undersampleing 
-
-6. Handling Text and categorical data --> tokenization, one hot encoder, label encoding 
-
-7. Handeling Date and Time Data --> convert date and time into numerical format
-'''
-'''
-WorkFlow: 
-
-1. Data Cleaning --> Handeling missing values, dealing with outliers and correcting data entry errors.
-
-2. Data Integration --> Merging of multiple dataset in one single dataset
+2. Data Integration --> Merging of multiple datasets in one single dataset
 
 3. Data Transformation --> normalization and standardization log or power transformation
 
-4. Feature selection --> Reduce the dimensionality and improve model performance. Correlation analysis, statiscal tests or feature importance analysis
+4. Feature selection --> Reduce the dimensionality and improve model performance. Correlation analysis, statistical tests, or feature importance analysis
 
-5. Handeling imbalanced data --> Resampleing , oversampling or undersampleing 
+5. Handeling imbalanced data --> Resampleing , oversampling or undersampling 
 
 6. Handling Text and categorical data --> tokenization, one hot encoder, label encoding 
 
-7. Handeling Date and Time Data --> convert date and time into numerical format
+7. Handling Date and Time Data --> Convert date and time into numerical format
 '''
 
 import streamlit as sl
