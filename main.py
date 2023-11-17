@@ -26,10 +26,10 @@ class DatasetReading:
     page_icon=":fire:",
     )
     def get_file(self):
-
         sl.write("<h1 style='text-align:Center'>Automated Data Pre-Processing</h1>",unsafe_allow_html=True)
         self.file = sl.file_uploader("Upload a file", type=["csv", "xlsx", "xls"])
-   
+        if self.file is None:
+            sl.write("Upload file error will disappear")
         if self.file is not None:
             if self.file.name.endswith('.csv'):
                 self.dataset = pd.read_csv(self.file)
