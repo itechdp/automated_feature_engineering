@@ -20,6 +20,11 @@ import streamlit as sl
 import pandas as pd
 
 class DatasetReading:
+    def __init__(self) -> None:
+        sl.set_page_config(
+    page_title="Data Pilot ML",
+    page_icon=":fire:",
+    )
     def get_file(self):
 
         sl.write("<h1 style='text-align:Center'>Automated Data Pre-Processing</h1>",unsafe_allow_html=True)
